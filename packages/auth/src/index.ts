@@ -10,7 +10,9 @@ import { organizationSubject } from './subjects/organization'
 import { projectSubject } from './subjects/project'
 import { userSubject } from './subjects/user'
 
-// type AppAbilities = UserSubject | ProjectSubject | ['manage', 'all']
+export * from './models/user'
+export * from './models/project'
+export * from './models/organization'
 
 const AppAbilitiesSchema = z.union([
   userSubject,
